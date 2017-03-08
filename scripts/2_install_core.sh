@@ -13,7 +13,7 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list.d/getdeb.list'
 
 sudo apt-get -y update 
-sudo apt-get -y install r-base=3.3.2-1trusty0 r-base-dev=3.3.2-1trusty0 evince=3.10.3-0ubuntu10.2
+sudo apt-get -y install r-base=3.3.2-1trusty0 r-base-core=3.3.2-1trusty0 r-recommended=3.3.2-1trusty0 evince=3.10.3-0ubuntu10.2
 sudo apt-get -y autoremove
 
 echo Completed package installation | tee -a $log
